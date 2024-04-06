@@ -7,7 +7,8 @@ import {
   RecentTitle,
   RecentEntry,
   Bottom,
-  BottomIcon,
+  BottomContent,
+  BottomBody,
   Image,
 } from "./SidebarStyled";
 import Menu from "../../assets/menu.svg";
@@ -42,24 +43,24 @@ const Sidebar = () => {
         ) : null}
       </Top>
       <Bottom>
-        <BottomIcon>
-          <RecentEntry>
+        <BottomContent>
+          <BottomBody>
             <Image src={Help} alt="" />
             {extended ? <p>Help</p> : null}
-          </RecentEntry>
-        </BottomIcon>
-        <BottomIcon>
-          <RecentEntry>
+          </BottomBody>
+        </BottomContent>
+        <BottomContent>
+          <BottomBody>
             <Image src={History} alt="" />
             {extended ? <p>Activity</p> : null}
-          </RecentEntry>
-        </BottomIcon>
-        <BottomIcon>
-          <RecentEntry>
+          </BottomBody>
+        </BottomContent>
+        <BottomContent>
+          <BottomBody>
             <Image src={Settings} alt="" />
             {extended ? <p>Setting</p> : null}
-          </RecentEntry>
-        </BottomIcon>
+          </BottomBody>
+        </BottomContent>
       </Bottom>
     </Container>
   );
