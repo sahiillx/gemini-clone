@@ -9,6 +9,10 @@ import Message from "./message.svg";
 import Mic from "./mic.svg";
 import MoreVertical from "moreVertical.svg";
 import Settings from "./settings.svg";
+import Compass from "./compass.svg";
+import Bulb from "./bulb.svg";
+import Code from "./code.svg";
+import Send from "./send.svg";
 
 
 export {
@@ -22,5 +26,9 @@ export {
     Message,
     Mic,
     MoreVertical,
-    Settings
+    Settings,
+    Compass,
+    Bulb,
+    Code,
+    Send
 };
