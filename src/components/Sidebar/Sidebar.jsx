@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useContext} from "react";
 import {
   Container,
   Top,
@@ -17,9 +17,11 @@ import Message from "../../assets/message.svg";
 import Help from "../../assets/help.svg";
 import History from "../../assets/history.svg";
 import Settings from "../../assets/settings.svg";
+import { Context } from "../../context/Context";
 
 const Sidebar = () => {
   const [extended, setextended] = useState(false);
+  const { onSent, prevPromt, setRecentPrompt } = useContext(Context);
   return (
     <Container>
       <Top>
@@ -31,14 +33,14 @@ const Sidebar = () => {
         {extended ? (
           <Recent>
             <RecentTitle> Recent </RecentTitle>
-            <RecentEntry>
-              <Image src={Message} alt="" />
-              <p>What is React ...</p>
-            </RecentEntry>
-            <RecentEntry>
-              <Image src={Message} alt="" />
-              <p>What is React ...</p>
-            </RecentEntry>
+            {prevPromt.map((item, index) => {
+              return (
+                <RecentEntry>
+                  <Image src={Message} alt="" />
+                  <p>{item} ...</p>
+                </RecentEntry>
+              );
+            })}
           </Recent>
         ) : null}
       </Top>

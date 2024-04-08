@@ -13,6 +13,8 @@ import Compass from "./compass.svg";
 import Bulb from "./bulb.svg";
 import Code from "./code.svg";
 import Send from "./send.svg";
+import GeminiSparkle1 from "./geminiSparkle1.svg";
+import GeminiSparkle2 from "./geminiSparkle2.svg";
 
 
 export {
@@ -30,5 +32,7 @@ export {
     Compass,
     Bulb,
     Code,
-    Send
+    Send,
+    GeminiSparkle1,
+    GeminiSparkle2
 };
