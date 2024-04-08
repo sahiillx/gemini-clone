@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   min-height: 100vh;
+  max-width: 17%;
   display: inline-flex;
   flex-direction: column;
   justify-content: space-between;
@@ -15,7 +16,7 @@ export const Image = styled.img`
   cursor: pointer;
   width: 25px;
   height: 25px;
-  margin: 15px 15px;
+  margin: 10px 10px;
 `;
 export const NewChat = styled.div`
   margin-top: 25px;
@@ -52,11 +53,11 @@ export const RecentEntry = styled.div`
   display: flex;
   align-items: center;
   border-radius: 50px;
-  padding-right: 115px;
+  padding-right: 50px;
   color: #282828;
 
   p {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
   }
   &:hover {
