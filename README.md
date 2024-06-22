@@ -2,9 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## SnapShot
 
-In the project directory, you can run:
+![1](https://github.com/sahiillx/gemini-clone/assets/69302208/dccb1e21-f166-4e87-bd48-54e47ca1df27)
+
 
 ### `npm start`
 
